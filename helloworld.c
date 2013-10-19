@@ -50,3 +50,5 @@ static void __exit helloworld_cleanup(void)
 
 module_init(helloworld_init);    /* #define module_init(x)  __initcall(x); */
 module_exit(helloworld_cleanup); /* #define module_exit(x)  __exitcall(x); */
+
+MODULE_LICENSE("GPL"); /* License to be shown in modinfo */
