@@ -7,7 +7,7 @@
 
 #include <linux/module.h> /* included for all kernel modules       */
 #include <linux/kernel.h> /* included for KERN_INFO                */
-#include <linux/init.h>	  /* included for __init and __exit macros */
+#include <linux/init.h>   /* included for __init and __exit macros */
 
 /*
  * Related to __init macro (from init.h):
@@ -23,7 +23,6 @@ static int __init helloworld_init(void)
     printk(KERN_INFO "Hello world!\n");
     return 0;
 }
-
 
 /*
  * Related to __exit macro (from init.h):
