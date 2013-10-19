@@ -51,4 +51,9 @@ static void __exit helloworld_cleanup(void)
 module_init(helloworld_init);    /* #define module_init(x)  __initcall(x); */
 module_exit(helloworld_cleanup); /* #define module_exit(x)  __exitcall(x); */
 
-MODULE_LICENSE("GPL"); /* License to be shown in modinfo */
+/*
+ * Information which we can see running modinfo command:
+ */
+MODULE_LICENSE("GPL");                      /* Module license               */
+MODULE_AUTHOR("Kernel BR team");            /* Module author                */
+MODULE_DESCRIPTION("A hello world module"); /* Description about the module */
