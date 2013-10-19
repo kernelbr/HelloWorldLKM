@@ -43,5 +43,10 @@ static void __exit helloworld_cleanup(void)
     printk(KERN_INFO "Cleaning up module.\n");
 }
 
+/*
+ * Interesting topic about initcalls:
+ * http://elinux.org/Deferred_Initcalls
+ */
+
 module_init(helloworld_init);    /* #define module_init(x)  __initcall(x); */
 module_exit(helloworld_cleanup); /* #define module_exit(x)  __exitcall(x); */
